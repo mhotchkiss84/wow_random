@@ -388,7 +388,6 @@ priest_race_alliance = ["Dark Iron Dwarf", "Kul Tiran", "Lightforged Draenei", "
 priest_race_horde = ["Mag'har Orc", "Nightborne", "Zandalari Troll", "Blood Elf", "Goblin",
                      "Tauren", "Troll", "Undead", "Pandaren", "Vulpera"]
 # Death Knight Races
-# Allied Races CANNOT BE DK. No Need For Allied Statement To Run
 dk_race_alliance = ["Draenei", "Dwarf", "Gnome", "Human", "Night Elf", "Worgen", "Pandaren",
                     "Void Elf", "Lightforged Draenei", "Kul Tiran", "Dark Iron Dwarf,",
                     "Mechagnome"]
@@ -440,7 +439,7 @@ elif final_class == "Hunter":
     if user_faction.lower() == "alliance":
         race_list = hunter_race_alliance
     else:
-        user_faction = hunter_race_horde
+        race_list = hunter_race_horde
 elif final_class == "Rogue":
     if user_faction.lower() == "alliance":
         race_list = rogue_race_alliance
@@ -486,8 +485,6 @@ elif final_class == "Demon Hunter":
         race_list = dh_race_alliance
     else:
         race_list = dh_race_horde
-else:
-    pass
 
 
 # (final_class)
